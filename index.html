@@ -1,6 +1,380 @@
 <!DOCTYPE html>
 <html>
-    <body>
-        <h1>HOLA</h1>
-    </body>
+<title>Bienvenido a Jeorhg Desu</title>
+<meta charset="UTF-8">
+<meta name="description" content="Jeorhg Desu es mi página web personal donde ofrezco mis servicios como diseñador web.">
+<meta name="keywords" content="Jeorhg, Cancún, Páginas web, Tu página web en Cancún, Diseño web, HTML, CSS, JavaScript, 3d, animación 3d, motion graphics">
+<meta name="author" content="Jeorhg">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- 1. Add latest jQuery and fancybox files -->
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-white w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" style="width:25%" class="w3-bar-item w3-button w3-white">INICIO</a>
+    <a href="#about" style="width:25%" class="w3-bar-item w3-button w3-hide-small w3-white"><i class="fa fa-user"></i> SOBRE MÍ</a>
+    <a href="#portfolio" style="width:25%" class="w3-bar-item w3-button w3-hide-small w3-white"><i class="fa fa-th"></i> TRABAJO</a>
+    <a href="#contact" style="width:25%" class="w3-bar-item w3-button w3-hide-small w3-white"><i class="fa fa-envelope"></i> CONTACTAME</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">SOBRE MÍ</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">TRABAJO</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">CONTACTAME</a>
+    <!-- <a href="#" class="w3-bar-item w3-button">SEARCH</a> -->
+  </div>
+</div>
+
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">BIENVENIDO
+  </div>
+</div>
+
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+
+  <h3 class="w3-center">SOBRE MÍ</h3>
+  <p class="w3-center"><em>Jeorhg</em></p>
+  <p>Hola me llamo Héctor Jorge, soy diseñador gráfico y estoy más enfocado al diseño y desarrollo web, actualmente trabajo en una compañia pero me gustaría empezar a trabajar en otros proyectos para no hacer lo mismo siempre y bueno aquí estoy a tus servicios.</p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <p><b><i class="fa fa-user w3-margin-right"></i>¡Este soy yo!</b></p><br>
+      <img src="imgs/avatar_jeorhg.jpg" class="w3-round w3-image" alt="¡Este soy yo!" width="500" height="333">
+    </div>
+
+    <!-- Hide this text on small devices -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>A lo largo de mi experiencia he tenido la oportunidad de trabajar en diversas empresas y proyectos, así mismo de conocer personas que han aportado mucho a mi desarrollo profesional, con quienes pude trabajar en diversas areas creativas y de producción impresa, audiovisual y web.
+        <br><br>
+        Soy una persona honesta y trabajadora, me gusta mucho el ambiente web y todo lo que tenga que ver con Animación 3d, video juegos, CGI, VFX, AR/VR etc.</p>
+    </div>
+  </div>
+  <div class="w3-row w3-large w3-center w3-padding-16">
+    <span><a data-morphing id="morphing" data-src="#morphing-content" href="javascript:;" class="btn">
+      <p>Ver mi CV</p>
+    </a></span> |
+    <span><a data-fancybox data-type="iframe" data-src="https://player.vimeo.com/video/311144827" data-width="640" data-height="360" href="javascript:;">
+      Demo reel
+    </a></span> |
+    <span>
+      <a href="https://www.turbosquid.com/Search/Artists/jeorhg" target="blank">TurboSquid</a>
+    </span> |
+    <span>
+      <a href="https://github.com/jeorhg" target="blank">GitHub</a>
+    </span>
+  </div>
+  
+
+<div id="morphing-content" class="hidden">
+  <!-- Page Container -->
+  <div class="w3-content w3-margin-top" style="max-width:1200px;">
+    
+    <!-- The Grid -->
+    <div class="w3-row-padding">
+    
+      <!-- Left Column -->
+      <div class="w3-third">
+      
+        <div class="w3-white w3-text-grey w3-card-4">
+          <div class="w3-display-container">
+            <img src="imgs/avatar_jeorhg.jpg" style="width:100%" alt="Avatar">
+            <div class="w3-display-bottomleft w3-container w3-text-black">
+              <h2 class="w3-text-white txshadow">Héctor Jorge</h2>
+            </div>
+          </div>
+          <div class="w3-container">
+            <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Diseñador web</p>
+            <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>Cancún QRO, Mx</p>
+            <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>jeorhg.maeglin@hotmail.com</p>
+            <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-blue-grey"></i>+52 984 151 9826</p>
+            <hr>
+  
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-blue-grey"></i>Habilidades</b></p>
+            <p>Adobe CC</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:90%">90%</div>
+            </div>
+            <p>Html, Css, Js, frameworks</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:80%">
+                <div class="w3-center w3-text-white">80%</div>
+              </div>
+            </div>
+            <p>3d, animación</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:75%">75%</div>
+            </div>
+            <p>Ilustración</p>
+            <div class="w3-light-grey w3-round-xlarge w3-small">
+              <div class="w3-container w3-center w3-round-xlarge w3-blue-grey" style="width:50%">50%</div>
+            </div>
+            <br>
+  
+            <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-blue-grey"></i>Idiomas</b></p>
+            <p>Español</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-blue-grey" style="height:24px;width:100%"></div>
+            </div>
+            <p>Ingles</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-blue-grey" style="height:24px;width:55%"></div>
+            </div>
+            <p>Japones</p>
+            <div class="w3-light-grey w3-round-xlarge">
+              <div class="w3-round-xlarge w3-blue-grey" style="height:24px;width:15%"></div>
+            </div>
+            <br>
+          </div>
+        </div><br>
+  
+      <!-- End Left Column -->
+      </div>
+  
+      <!-- Right Column -->
+      <div class="w3-twothird">
+      
+        <div class="w3-container w3-card w3-white w3-margin-bottom">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Experiencia</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Diseñador web / Grupo Xcaret</b></h5>
+            <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2019 - <span class="w3-tag w3-blue-grey w3-round">Current</span></h6>
+            <p>Actividades: Diseño, desarrollo y mantenimiento de sitios web.<br>
+              software: Adobe CC, boostrap, tailwind, html, css, js.
+              </p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Animador 3d / Omnibus de México</b></h5>
+            <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Dic 2017 - Jun 2019</h6>
+            <p>Actividades: Modelado 3d, rigging, render, animación y multimedia en general.<br>
+              software: Maya, Photoshop, AE
+              </p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Diseñador web / Grupo Hitec</b></h5>
+            <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2015 - Nov 2017</h6>
+            <p>Actividades: coordinación de medios digitales e impresos, diseño y desarrollo de sitios web.<br>
+              software: Adobe CC, boostrap, html, css, js.
+               </p><br>
+          </div>
+        </div>
+  
+        <div class="w3-container w3-card w3-white">
+          <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-blue-grey"></i>Educación</h2>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Unitec</b></h5>
+            <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>1999-2003</h6>
+            <p>Diseño gráfico</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Eunoia School</b></h5>
+            <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2005</h6>
+            <p>Curso animación 3d</p>
+            <hr>
+          </div>
+          <div class="w3-container">
+            <h5 class="w3-opacity"><b>Inlingua Vancouver</b></h5>
+            <h6 class="w3-text-blue-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2007</h6>
+            <p>Curso Ingles</p><br>
+          </div>
+        </div>
+  
+      <!-- End Right Column -->
+      </div>
+      
+    <!-- End Grid -->
+    </div>
+    
+    <!-- End Page Container -->
+  </div>
+</div>
+ </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge"></span><br>
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge"></span><br>
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge"></span><br>
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge"></span><br>
+  </div>
+</div>
+
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide txshadow">¡Osi te saluda!</span>
+  </div>
+</div>
+
+<!-- Container (Portfolio Section) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">TRABAJO</h3>
+  <p class="w3-center"><em>Aquí algunas muestras de mi trabajo más reciente.<br> Click en la imagen para ver en grande.</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3">
+      <img src="imgs/bisel.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="bisel">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imgs/mcteks.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="mctek">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imgs/mecanica.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="mecanica">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imgs/nexttec.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="nexttec">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="imgs/odm_web_mockupV2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="odm">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imgs/promomc.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="promo">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imgs/soltimx.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="solti">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="imgs/xibalba.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="xibalba">
+    </div>
+    <!-- <button class="w3-button w3-padding-large w3-light-grey" style="margin-top:64px">LOAD MORE</button> -->
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Third Parallax Image with Portfolio Text -->
+<div class="bgimg-3 w3-display-container">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide"></span>
+  </div>
+</div>
+
+<!-- Container (Contact Section) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CONTACTAME</h3>
+  <p class="w3-center"><em>¡Me gustaría saber de tí o tu proyecto!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <img src="imgs/workn.jpg" class="w3-image w3-round" style="width:100%">
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Cancún, Qro, Mx<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Tel: +52 984 151 9826<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: jeorhg.maeglin@hotmail.com<br>
+      </div>
+      <p><i class="fa fa-coffee"></i>, dejame una nota:</p>
+      <form action="mail.php" method="post">
+        <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Nombre" required name="name">
+          </div>
+          <div class="w3-half">
+            <input class="w3-input w3-border" type="text" placeholder="Email" required name="email">
+          </div>
+        </div>
+        <input class="w3-input w3-border" type="text" placeholder="Mensaje" required name="message">
+        <button class="w3-button w3-black  w3-section" name="submit" type="submit">
+          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+
+   
+    
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Ir arriba</a>
+  <div class="w3-xlarge w3-section">
+    <a href="https://www.facebook.com/crimsonII" target="blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/jeorhg/" target="blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <a href="https://www.pinterest.com.mx/jeorhg/" target="blank"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+    <a href="https://twitter.com/Jeorhg" target="blank"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+    <a href="https://www.linkedin.com/in/hector-jorge-cortes-s-a55b5228/" target="blank"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+  </div>
+  <p>Gracias por tu visita.</p>
+</footer>
+
+<script src="fancybox.js"></script>
+
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
 </html>
